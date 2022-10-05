@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["email"].value;
+  
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    
+  }
+  else if (y=="")
+  {
+	  alert("Email must be filled out");
+	   return false;
+  }
+ 
+}
+</script>
+</head>
+<body>
+
+<center>
+<div style="border:3px solid black;width:25%;border-radius:20px;padding:20px" align="center">
+
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+   <label for=fname> UserName   </label> <input type="text" name=fname id=fname /><br><br>
+ 
+	<label for=email>Email      </label> <input type="email" name=email id=email /><br><br>
+	
+	<label for=pass> Password   </label> <input type="password" name=password id=pass /><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</center>
+
+</body>
+</html>

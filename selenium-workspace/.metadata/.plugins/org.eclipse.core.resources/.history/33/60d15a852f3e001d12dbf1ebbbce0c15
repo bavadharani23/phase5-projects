@@ -1,0 +1,15 @@
+package com;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DemoTest {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.drive","C:\\Users\\bava\\eclipse_workspace\\selenium\\chrome\\chromedriver.exe");
+		WebDriver wd=new ChromeDriver();
+		wd.get("http://127.0.0.1:5500/index.html");
+
+	}
+
+}
