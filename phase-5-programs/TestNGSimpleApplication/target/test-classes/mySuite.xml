@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="MyTest">
+    <classes>
+      <class name="com.service.HookTestingMethods">
+      <methods>
+      <exclude name="f1"></exclude>
+      </methods>
+      </class>
+      <class name="com.service.SampleTest">
+      <methods>
+      <include name="f1"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

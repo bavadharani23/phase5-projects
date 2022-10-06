@@ -1,0 +1,14 @@
+package com.service;
+
+import static org.testng.AssertJUnit.assertEquals;
+import org.testng.annotations.Test;
+
+public class OperationTest {
+
+  @Test
+  public void addTest() {
+    Operation op =new Operation();
+    int result=op.add(100,200);
+    assertEquals(result,30);
+  }
+}
